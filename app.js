@@ -5,7 +5,7 @@ const chalk   = require('chalk');
 const hbs     = require('hbs');
 const path    = require('path');
 
-const register  = require('./routers/register');
+//const register  = require('./routers/register');
 
 app.set('view engine', 'hbs');
 app.set("views","./views");
@@ -19,7 +19,7 @@ app.get('/',(req,res)=>{
     res.render('home');
 });
 
-app.use('/Register',register);
+//app.use('/Register',register);
 
 const port = process.env.PORT || 8080;
 app.listen(port,()=>{
