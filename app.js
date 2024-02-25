@@ -21,8 +21,9 @@ app.get('/',(req,res)=>{
 
 app.use('/Register',register);
 
-app.listen(9000,()=>{
-    debug('On port: '+chalk.blue('9000'));  
+const port = process.env.PORT || 8080;
+app.listen(port,()=>{
+    debug('On port: '+chalk.blue(port));  
 }) 
 
 
